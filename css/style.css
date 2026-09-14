@@ -27,65 +27,87 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
+
     background: rgba(9, 11, 16, 0.94);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     backdrop-filter: blur(14px);
 }
 
 .nav-container {
     width: min(1180px, 92%);
-    min-height: 78px;
+    min-height: 88px;
+
     margin: auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 30px;
 }
 
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+
+    gap: 14px;
 }
 
-.brand-moon {
-    width: 43px;
-    height: 43px;
-    display: grid;
-    place-items: center;
+.brand-logo-image {
+    width: 62px;
+    height: 62px;
+
+    object-fit: contain;
+
     border-radius: 50%;
-    background: linear-gradient(145deg, #7759d7, #3c65d8);
-    font-size: 27px;
-    box-shadow: 0 0 24px rgba(95, 89, 220, 0.35);
+
+    flex-shrink: 0;
+
+    box-shadow:
+        0 0 18px
+        rgba(95, 89, 220, 0.18);
 }
 
 .brand-text {
     display: flex;
     flex-direction: column;
+
     line-height: 1.1;
 }
 
 .brand-name {
-    font-size: 17px;
+    font-size: 18px;
+
     font-weight: 700;
+
     letter-spacing: 0.3px;
 }
 
 .brand-sub {
     margin-top: 4px;
+
     color: #999eac;
+
     font-size: 10px;
+
     letter-spacing: 3px;
 }
 
 .main-nav {
     display: flex;
+
     gap: 30px;
 }
 
 .main-nav a {
     color: #b8bbc5;
+
     font-size: 14px;
+
     transition: 0.2s ease;
 }
 
@@ -98,26 +120,35 @@ a {
 
 .hero {
     min-height: 650px;
+
     position: relative;
+
     overflow: hidden;
+
     display: flex;
+
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.07);
 }
 
 .hero::before {
     content: "";
+
     position: absolute;
+
     inset: 0;
 
     background:
         linear-gradient(
-            rgba(255,255,255,0.018) 1px,
+            rgba(255, 255, 255, 0.018) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255,255,255,0.018) 1px,
+            rgba(255, 255, 255, 0.018) 1px,
             transparent 1px
         );
 
@@ -133,32 +164,43 @@ a {
 
 .hero-glow {
     position: absolute;
+
     border-radius: 50%;
+
     filter: blur(100px);
+
     opacity: 0.18;
 }
 
 .hero-glow-one {
     width: 500px;
     height: 500px;
+
     background: #694cdd;
+
     left: -230px;
+
     top: 60px;
 }
 
 .hero-glow-two {
     width: 430px;
     height: 430px;
+
     background: #2176c9;
+
     right: -160px;
+
     top: 100px;
 }
 
 .hero-content {
     position: relative;
+
     z-index: 2;
 
     width: min(1180px, 92%);
+
     margin: auto;
 
     display: grid;
@@ -181,13 +223,17 @@ a {
 .eyebrow,
 .section-kicker {
     color: #9181ed;
+
     font-size: 12px;
+
     font-weight: 700;
+
     letter-spacing: 3px;
 }
 
 .hero h1 {
     margin-top: 16px;
+
     max-width: 690px;
 
     font-size:
@@ -288,7 +334,7 @@ a {
         1px solid #333844;
 
     background:
-        rgba(255,255,255,0.025);
+        rgba(255, 255, 255, 0.025);
 }
 
 .button-secondary:hover {
@@ -318,12 +364,14 @@ a {
 
     box-shadow:
         0 30px 60px
-        rgba(0,0,0,0.28);
+        rgba(0, 0, 0, 0.28);
 }
 
 .about-card-top {
     display: flex;
+
     align-items: center;
+
     gap: 14px;
 }
 
@@ -382,7 +430,7 @@ a {
         3px solid #755fd6;
 
     background:
-        rgba(255,255,255,0.025);
+        rgba(255, 255, 255, 0.025);
 
     color: #d9dbe1;
 
@@ -396,6 +444,7 @@ a {
 
 .section-container {
     width: min(1180px, 92%);
+
     margin: auto;
 }
 
@@ -529,11 +578,11 @@ a {
     font-size: 24px;
 
     background:
-        rgba(107,84,215,0.12);
+        rgba(107, 84, 215, 0.12);
 
     border:
         1px solid
-        rgba(132,110,226,0.17);
+        rgba(132, 110, 226, 0.17);
 }
 
 .panel-category {
@@ -620,11 +669,11 @@ a {
 
     border-top:
         1px solid
-        rgba(255,255,255,0.05);
+        rgba(255, 255, 255, 0.05);
 
     border-bottom:
         1px solid
-        rgba(255,255,255,0.05);
+        rgba(255, 255, 255, 0.05);
 
     text-align: center;
 }
@@ -660,11 +709,9 @@ a {
 }
 
 .project-card:hover {
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
 
-    border-color:
-        #454c5c;
+    border-color: #454c5c;
 }
 
 .project-type {
@@ -715,11 +762,11 @@ a {
     border-radius: 50px;
 
     background:
-        rgba(116,89,218,0.11);
+        rgba(116, 89, 218, 0.11);
 
     border:
         1px solid
-        rgba(116,89,218,0.24);
+        rgba(116, 89, 218, 0.24);
 
     color: #9c8cec;
 
@@ -728,10 +775,10 @@ a {
 
 .status-badge.available {
     background:
-        rgba(60,130,115,0.12);
+        rgba(60, 130, 115, 0.12);
 
     border-color:
-        rgba(70,150,130,0.25);
+        rgba(70, 150, 130, 0.25);
 
     color: #75c9b5;
 }
@@ -756,12 +803,12 @@ a {
     background:
         radial-gradient(
             circle at top left,
-            rgba(107,81,214,0.14),
+            rgba(107, 81, 214, 0.14),
             transparent 40%
         ),
         radial-gradient(
             circle at bottom right,
-            rgba(50,105,196,0.12),
+            rgba(50, 105, 196, 0.12),
             transparent 40%
         ),
         #10131a;
@@ -801,7 +848,7 @@ a {
 footer {
     border-top:
         1px solid
-        rgba(255,255,255,0.07);
+        rgba(255, 255, 255, 0.07);
 
     background: #07090d;
 }
@@ -869,7 +916,12 @@ footer {
 @media (max-width: 600px) {
 
     .nav-container {
-        min-height: 68px;
+        min-height: 76px;
+    }
+
+    .brand-logo-image {
+        width: 50px;
+        height: 50px;
     }
 
     .brand-name {
