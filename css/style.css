@@ -34,7 +34,7 @@ a {
 
 .nav-container {
     width: min(1180px, 92%);
-    min-height: 138px;
+    min-height: 122px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -45,35 +45,16 @@ a {
 .brand {
     display: flex;
     align-items: center;
-    gap: 20px;
+    flex-shrink: 0;
 }
 
 .brand-logo-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     border-radius: 50%;
-    flex-shrink: 0;
+    display: block;
     box-shadow: 0 0 28px rgba(95, 89, 220, 0.22);
-}
-
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
-.brand-name {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-}
-
-.brand-sub {
-    margin-top: 6px;
-    color: #999eac;
-    font-size: 11px;
-    letter-spacing: 3px;
 }
 
 .main-nav {
@@ -239,22 +220,13 @@ a {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.28);
 }
 
-.about-card-top {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.about-card-icon {
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: rgba(107, 84, 215, 0.14);
-    border: 1px solid rgba(132, 110, 226, 0.24);
-    color: #a795ef;
-    font-size: 28px;
+.about-card-logo {
+    width: 275px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 26px auto;
+    filter: drop-shadow(0 0 20px rgba(95, 89, 220, 0.18));
 }
 
 .about-card-label {
@@ -265,7 +237,7 @@ a {
 }
 
 .about-hero-card h2 {
-    margin-top: 25px;
+    margin-top: 18px;
     font-size: 31px;
 }
 
@@ -583,6 +555,10 @@ footer {
         max-width: 650px;
     }
 
+    .about-card-logo {
+        width: 230px;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -598,20 +574,12 @@ footer {
 @media (max-width: 600px) {
 
     .nav-container {
-        min-height: 94px;
+        min-height: 96px;
     }
 
     .brand-logo-image {
         width: 76px;
         height: 76px;
-    }
-
-    .brand-name {
-        font-size: 15px;
-    }
-
-    .brand-sub {
-        font-size: 9px;
     }
 
     .hero-content {
@@ -637,6 +605,11 @@ footer {
 
     .about-hero-card {
         padding: 30px;
+    }
+
+    .about-card-logo {
+        width: 190px;
+        margin-bottom: 22px;
     }
 
     .about-hero-card h2 {
