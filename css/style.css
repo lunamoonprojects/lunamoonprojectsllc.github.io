@@ -749,6 +749,83 @@ a {
     color: #75c9b5;
 }
 
+.project-link {
+    display: block;
+    width: fit-content;
+    margin-top: 18px;
+    color: #a99af8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-link:hover { color: #fff; }
+
+/* SOFTWARE LANDING PAGE */
+.software-hero {
+    padding: 115px 0 100px;
+    background: radial-gradient(circle at 80% 10%, rgba(90, 72, 180, .2), transparent 42%), #0b0d14;
+    border-bottom: 1px solid rgba(255, 255, 255, .07);
+}
+
+.software-hero h1 {
+    max-width: 820px;
+    margin-top: 18px;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.software-lead {
+    max-width: 690px;
+    margin: 24px 0 34px;
+    color: #adb2c0;
+    font-size: 18px;
+}
+
+.software-list { padding: 90px 0 110px; }
+.software-list .section-title { margin-top: 12px; }
+
+.software-feature {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 40px;
+    padding: 36px;
+    border: 1px solid #292e3b;
+    border-radius: 20px;
+    background: #12151c;
+}
+
+.software-symbol {
+    display: grid;
+    place-items: center;
+    height: 180px;
+    border-radius: 16px;
+    background: radial-gradient(circle at 25% 20%, #30244d, #171d2b);
+    color: #b09dfd;
+    font-size: 100px;
+}
+
+.software-feature h3 { margin-top: 10px; font-size: 32px; }
+.software-feature p:not(.project-type) { margin-top: 13px; color: #aab0bd; }
+.software-feature .software-note { font-size: 13px; color: #858b9b; }
+
+.software-coming-soon {
+    margin-top: 30px;
+    padding: 30px 34px;
+    border: 1px solid #252a34;
+    border-radius: 16px;
+}
+.software-coming-soon p { margin-top: 7px; color: #9398a5; }
+
+@media (max-width: 600px) {
+    .software-hero { padding: 75px 0; }
+    .software-lead { font-size: 16px; }
+    .software-feature { grid-template-columns: 1fr; padding: 24px; }
+    .software-symbol { height: 150px; font-size: 80px; }
+}
+
 
 /* CONTACT */
 
